@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore simple and flexible SaaS pricing plans for every team.">
+  <title>Planora | Simple Pricing Plans</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Planora home">
+      <span class="brand-icon">P</span>
+      <span>planora</span>
+    </a>
+    <span class="header-label">Simple, transparent pricing</span>
+  </header>
+
+  <main class="pricing-section">
+    <div class="intro">
+      <span class="eyebrow">PLANS THAT GROW WITH YOU</span>
+      <h1>Invest in your <span>next big idea.</span></h1>
+      <p class="subtitle">
+        Powerful tools, simple pricing. Choose the plan that fits your
+        workflow and build something amazing.
+      </p>
+    </div>
+
+    <div class="billing-area">
+      <div class="billing-toggle" role="group" aria-label="Billing frequency">
+        <button
+          class="billing-option active"
+          id="monthlyBtn"
+          type="button"
+          data-billing="monthly"
+          aria-pressed="true">
+          Monthly
+        </button>
+
+        <button
+          class="billing-option"
+          id="yearlyBtn"
+          type="button"
+          data-billing="yearly"
+          aria-pressed="false">
+          Yearly
+        </button>
+      </div>
+      <span class="billing-note">
+        <span class="note-arrow">↳</span> Save up to 20% yearly
+      </span>
+    </div>
+
+    <div class="pricing-grid">
+      <!-- BASIC PLAN -->
+      <article class="pricing-card">
+        <div class="plan-top">
+          <div class="plan-icon basic-icon">✦</div>
+          <h2>Basic</h2>
+          <p class="plan-description">
+            Everything you need to get started.
+          </p>
+        </div>
+
+        <div class="price-area">
+          <div class="price-line">
+            <span class="currency">$</span>
+            <span class="price" data-monthly="9" data-yearly="7">9</span>
+            <span class="price-period">/ month</span>
+          </div>
+          <p class="billing-detail" data-monthly-text>
+            Billed monthly
+          </p>
+          <p class="billing-detail" data-yearly-text hidden>
+            $84 billed annually
+          </p>
+        </div>
+
+        <button class="choose-button secondary-button"
+          type="button" data-plan="Basic">
+          Choose Basic <span aria-hidden="true">→</span>
+        </button>
+
+        <div class="feature-divider"></div>
+        <p class="feature-heading">WHAT'S INCLUDED</p>
+        <ul class="feature-list">
+          <li><span class="check">✓</span> Up to 3 projects</li>
+          <li><span class="check">✓</span> 1 team member</li>
+          <li><span class="check">✓</span> 5 GB cloud storage</li>
+          <li><span class="check">✓</span> Basic analytics</li>
+          <li><span class="check">✓</span> Email support</li>
+        </ul>
+      </article>
+
+      <!-- PRO PLAN -->
+      <article class="pricing-card popular-card">
+        <div class="popular-badge">
+          <span aria-hidden="true">★</span> MOST POPULAR
+        </div>
+
+        <div class="plan-top">
+          <div class="plan-icon pro-icon">✧</div>
+          <h2>Pro</h2>
+          <p class="plan-description">
+            More power for growing teams.
+          </p>
+        </div>
+
+        <div class="price-area">
+          <div class="price-line">
+            <span class="currency">$</span>
+            <span class="price" data-monthly="19" data-yearly="15">19</span>
+            <span class="price-period">/ month</span>
+          </div>
+          <p class="billing-detail" data-monthly-text>
+            Billed monthly
+          </p>
+          <p class="billing-detail yearly-detail" data-yearly-text hidden>
+            <span class="discount-badge">SAVE 21%</span>
+            $180 billed annually
+          </p>
+        </div>
+
+        <button class="choose-button primary-button"
+          type="button" data-plan="Pro">
+          Choose Pro <span aria-hidden="true">→</span>
+        </button>
+
+        <div class="feature-divider"></div>
+        <p class="feature-heading">EVERYTHING IN BASIC, PLUS</p>
+        <ul class="feature-list">
+          <li><span class="check">✓</span> Unlimited projects</li>
+          <li><span class="check">✓</span> Up to 10 team members</li>
+          <li><span class="check">✓</span> 100 GB cloud storage</li>
+          <li><span class="check">✓</span> Advanced analytics</li>
+          <li><span class="check">✓</span> Priority support</li>
+          <li><span class="check">✓</span> Team collaboration</li>
+        </ul>
+      </article>
+
+      <!-- ENTERPRISE PLAN -->
+      <article class="pricing-card">
+        <div class="plan-top">
+          <div class="plan-icon enterprise-icon">◇</div>
+          <h2>Enterprise</h2>
+          <p class="plan-description">
+            Advanced solutions for bigger teams.
+          </p>
+        </div>
+
+        <div class="price-area">
+          <div class="price-line">
+            <span class="currency">$</span>
+            <span class="price" data-monthly="49" data-yearly="39">49</span>
+            <span class="price-period">/ month</span>
+          </div>
+          <p class="billing-detail" data-monthly-text>
+            Billed monthly
+          </p>
+          <p class="billing-detail" data-yearly-text hidden>
+            $468 billed annually
+          </p>
+        </div>
+
+        <button class="choose-button secondary-button"
+          type="button" data-plan="Enterprise">
+          Choose Enterprise <span aria-hidden="true">→</span>
+        </button>
+
+        <div class="feature-divider"></div>
+        <p class="feature-heading">EVERYTHING IN PRO, PLUS</p>
+        <ul class="feature-list">
+          <li><span class="check">✓</span> Unlimited team members</li>
+          <li><span class="check">✓</span> Unlimited cloud storage</li>
+          <li><span class="check">✓</span> Custom reports</li>
+          <li><span class="check">✓</span> Dedicated support</li>
+          <li><span class="check">✓</span> Advanced security</li>
+          <li><span class="check">✓</span> Custom integrations</li>
+        </ul>
+      </article>
+    </div>
+
+    <p class="selection-message" id="selectionMessage"
+      role="status" aria-live="polite"></p>
+
+    <p class="bottom-note">
+      All plans include secure cloud access. Upgrade or change your plan
+      whenever your needs grow.
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-brand" href="#">planora</a>
+    <p>Simple tools. Better work. Bigger possibilities.</p>
+    <p class="copyright">© 2026 Planora. Demo pricing page for educational use.</p>
+  </footer>
+</body>
+</html>
